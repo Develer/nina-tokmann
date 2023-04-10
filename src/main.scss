@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 1024px;
+  margin: 0 auto;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 72px;
+  padding: 16px 0;
+
+  h1 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  nav {
+    display: flex;
+    gap: 32px;
+    font-size: 20px;
+
+    a {
+      text-decoration: none;
+      color: #333;
+
+      &:first-child {
+        color: #652DC1;
+      }
+    }
+
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    h2 {
+      font-size: 48px;
+      font-weight: normal;
+    }
+
+    p.caption {
+      font-size: 24px;
+      font-weight: normal;
+      color: #652DC1;
+    }
+
+    p.hero-text {
+      font-size: 22px;
+      text-align: left;
+      color: #7D7D7D;
+    }
+  }
+
+  .btn {
+    border-radius: 8px;
+    font-family: 'Patrick Hand';
+    text-decoration: none;
+    padding: 12px 48px;
+    color: #fff;
+    background-color: #652DC1;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
