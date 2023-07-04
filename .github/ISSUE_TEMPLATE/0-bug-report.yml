@@ -73,12 +73,15 @@ body:
   - type: textarea
     attributes:
       label: Environment (with versions)?
-      description: "Please provide Grafana, OS, and Browser versions."
+      description: |
+        #
+        Please provide Grafana, OS, and Browser versions.
+        [How do I find my Grafana version info?](https://community.grafana.com/t/how-to-find-your-grafana-version-info-3-different-ways/86857)
       placeholder: "ex: v9.5.0, or v9.5.0-cloud.5.a016665c (b2a5d45589)"
       value: |
-        Grafana: v9.2.3
-        OS: MacOS Big Sur
-        Browser: Google Chrome v113
+        Grafana:
+        OS:
+        Browser:
     validations:
       required: false
 
