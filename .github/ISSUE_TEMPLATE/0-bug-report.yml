@@ -55,7 +55,7 @@ body:
         Did this work before?
       description: "Tell us how it works before?"
       placeholder: "No"
-      value: No
+      value: "No"
     validations:
       required: true
   
