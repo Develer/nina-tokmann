@@ -29,10 +29,10 @@ body:
         **Hot Tip:** Record your screen and add it here as a gif. 
       placeholder: Tell us what you see!
       value: |
-        * What happened:
-        -
-        * What did you expect to happen:
-        -
+        * Made an XYChart
+        * Tried to use Base 10 Logarithmic axis
+        * Nothing changes, still a linear axis
+        * Tried to use series overrides as well
     validations:
       required: true
   
@@ -42,21 +42,31 @@ body:
       description: What did you expect to happen?
       placeholder: Tell us what you expect!
       value: |
-        - What happened:
-        -
-        - What did you expect to happen:
-        -
+        - Base10 Log axis on Y axis
     validations:
       required: true
   
   - type: textarea
     attributes:
-      label: |
-        #
-        Did this work before?
+      label: Did this work before?
       description: "Tell us how it works before?"
       placeholder: "No"
       value: "No"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: How do we reproduce it?
+      description: |
+        Whenever possible, please provide **detailed** steps for reproducing your bug.
+        **This is very helpful info**
+      placeholder: "Step 1:..."
+      value: |
+        1. Open Grafana and do X
+        2. Now click button Y
+        3. Wait for the browser to crash. Error message says: "Error..."
+        ...
     validations:
       required: true
   
@@ -71,31 +81,37 @@ body:
         Browser: Google Chrome v113
     validations:
       required: false
-  
-  - type: textarea
-    id: bug-repro
+
+  - type: dropdown
     attributes:
-      label: How do we reproduce it?
-      description: |
-        Whenever possible, please provide **detailed** steps for reproducing your bug.
-        **This is very helpful info**
-      placeholder: "Step 1:..."
-      value: |
-        **Step 1**:
-        - Open Grafana and do X 
-
-        **Step 2**:
-        - Now click button Y
-
-        **Step 3**:
-        - Wait for the browser to crash. Error message says: "Error..."
+      label: Grafana Platform?
+      description: How are you running/deploying Grafana?
+      options:
+        - I use Grafana Cloud
+        - Docker
+        - Kubernetes
+        - A package manager (APT, YUM, BREW, etc.)
+        - A downloaded binary
+        - Other
+        - I don't know
     validations:
-      required: true
- 
-  - type: markdown
+      required: false
+
+  - type: input
     attributes:
-      value: |
-       #
+      label: Datasource(s)?
+      description: Is this issue specific to a datasource plugin/plugins? Please list all that apply:
+      placeholder: "ex. Elasticsearch 5.0.0 or Infinity 1.4.1 ..."
+
+  - type: textarea
+    attributes:
+      label: Is the bug inside a Dashboard Panel?
+      description: |
+        If the bug appears inside a [dashboard panel](https://grafana.com/docs/grafana/latest/panels-visualizations/#panels-and-visualizations), please use the ["Get-Help" feature](https://grafana.com/docs/grafana/latest/troubleshooting/send-panel-to-grafana-support/). Select **copy to clipboard** and paste the data below.
+        No need for backticks--this text will get formatted as a code-block.
+        What's a [dashboard panel](https://grafana.com/docs/grafana/latest/panels-visualizations/#panels-and-visualizations)?
+      placeholder: Copy "get-help" data here
+      value: Copy the panel's ["get-help" data](https://grafana.com/docs/grafana/latest/troubleshooting/send-panel-to-grafana-support/) here
   
   - type: input
     id: gf-version
