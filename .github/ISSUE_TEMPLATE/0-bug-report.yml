@@ -63,10 +63,10 @@ body:
       description: |
         #
         g
-      placeholder: No
+      placeholder: "No"
       value: |
         No
-    validation:
+    validations:
       required: true
   
   - type: textarea
