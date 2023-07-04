@@ -16,6 +16,10 @@ body:
         **HINT:** Have you tried [searching](https://github.com/grafana/grafana/issues) for similar issues? Duplicate issues are common.
 
         **Are you reporting a security vulnerability?** [Submit it here instead](https://github.com/grafana/grafana/security/policy).
+  - type: markdown
+    attributes:
+      value: |
+       #
   - type: textarea
     id: bug-describe
     attributes:
@@ -40,9 +44,9 @@ body:
     id: bug-expect
     attributes:
       label: |
-        # What did you expect to happen?
+        # What did you expect to happen? label
       description: |
-        # What did you expect to happen?
+        # What did you expect to happen? description
       placeholder: Tell us what you expect!
       value: |
         **What happened**:
