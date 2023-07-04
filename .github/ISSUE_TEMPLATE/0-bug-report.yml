@@ -46,7 +46,8 @@ body:
       label: |
         # What did you expect to happen? label
       description: |
-        # What did you expect to happen? description
+        #
+        What did you expect to happen? description
       placeholder: Tell us what you expect!
       value: |
         **What happened**:
