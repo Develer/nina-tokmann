@@ -21,12 +21,9 @@ body:
       value: |
        #
   - type: textarea
-    id: bug-describe
     attributes:
-      label: |
-        # What happened?
+      label: What happened?
       description: |
-        #
         Describe your bug. What happened? What did you expect to happen?
         **Hot Tip:** Record your screen and add it here as a gif. 
       placeholder: Tell us what you see!
@@ -37,15 +34,11 @@ body:
         -
     validations:
       required: true
+  
   - type: textarea
-    id: bug-expect
     attributes:
-      label: |
-        #
-        What did you expect to happen? label
-      description: |
-        #
-        What did you expect to happen? description
+      label: What did you expect to happen?
+      description: What did you expect to happen?
       placeholder: Tell us what you expect!
       value: |
         **What happened**:
@@ -54,18 +47,15 @@ body:
         -
     validations:
       required: true
+  
   - type: textarea
-    id: bug-work-before
     attributes:
       label: |
         #
         Did this work before?
-      description: |
-        #
-        g
+      description: "Tell us how it works before?"
       placeholder: "No"
-      value: |
-        No
+      value: No
     validations:
       required: true
   
@@ -84,10 +74,8 @@ body:
   - type: textarea
     id: bug-repro
     attributes:
-      label: |
-        # How do we reproduce it?
+      label: How do we reproduce it?
       description: |
-        #
         Whenever possible, please provide **detailed** steps for reproducing your bug.
         **This is very helpful info**
       placeholder: "Step 1:..."
@@ -102,16 +90,18 @@ body:
         - Wait for the browser to crash. Error message says: "Error..."
     validations:
       required: true
+ 
   - type: markdown
     attributes:
       value: |
        #
+  
   - type: input
     id: gf-version
     attributes:
       label: |
         
-        # What Grafana version are you using?
+        #### What Grafana version are you using?
         
       description: |
         #
