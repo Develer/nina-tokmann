@@ -103,7 +103,7 @@ body:
     id: regression
     attributes:
       label: |
-        ##### Is this a Regression?
+        #### Is this a Regression?
       description: |
         A regression means that the feature was working, then you upgraded, and now it's broken.
       options:
